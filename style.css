@@ -1,0 +1,188 @@
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(219, 219, 219);
+}
+
+#container {
+  display: inline-block;
+  background-color: grey;
+  height: 75vh;
+  width: 25vw;
+  border-radius: 15px;
+  border: rgb(46, 46, 46) 1px solid;
+  min-width: 300px;
+  min-height: 500px;
+  box-shadow: inset -10px -10px 30px rgba(0, 0, 0, 0.575),
+    9px 9px 9px rgba(0, 0, 0, 0.486);
+  margin-top: 10vh;
+}
+
+#screen {
+  margin: 5%;
+  height: 20%;
+  background-color: rgb(209, 209, 209);
+  border-radius: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#result {
+  box-sizing: border-box;
+  padding-right: 2%;
+  padding-left: 2%;
+  border: rgb(53, 53, 53) 1px solid;
+  box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.486),
+    -1px -1px 4px rgb(65, 65, 65);
+  background-color: rgb(189, 189, 189);
+  font-size: 50px;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  text-align: right;
+  margin: 0;
+  user-select: none;
+}
+
+#keyboard {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  gap: 2%;
+  height: 60%;
+  padding: 10%;
+  margin-top: -5%;
+  grid-template-areas:
+    "r r p q"
+    "a a b v"
+    "e f g w"
+    "h i j x"
+    "k l m y"
+    "n n o z";
+}
+
+.keys:hover {
+  background-color: rgb(58, 58, 58);
+}
+
+.keys {
+  user-select: none;
+  box-shadow: inset -10px -10px 15px rgba(0, 0, 0, 0.658),
+    3px 3px 3px rgba(0, 0, 0, 0.514);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(43, 43, 43);
+  border-radius: 10px;
+  color: rgb(180, 180, 180);
+  height: 100%;
+  width: 100%;
+  font-size: 150%;
+  transition: background-color 200ms;
+}
+#lastResult {
+  box-sizing: border-box;
+  padding-right: 2%;
+  padding-left: 2%;
+  border: rgb(53, 53, 53) 1px solid;
+  box-shadow: inset 3px 3px 4px rgba(0, 0, 0, 0.486),
+    -1px -1px 4px rgb(65, 65, 65);
+  background-color: rgb(165, 165, 165);
+  font-size: 20px;
+  border-radius: 10px;
+  color: rgb(41, 41, 41);
+  overflow: hidden;
+  text-align: left;
+}
+
+.empty {
+  grid-area: r;
+}
+
+.p1 {
+  grid-area: p;
+}
+
+.p2 {
+  grid-area: q;
+}
+
+.zero {
+  box-sizing: border-box;
+  grid-area: n;
+  justify-content: left;
+  padding-left: 18%;
+}
+
+.c {
+  grid-area: a;
+  box-sizing: border-box;
+  justify-content: left;
+  padding-left: 18%;
+}
+
+.porcento {
+  grid-area: b;
+}
+
+.um {
+  grid-area: e;
+}
+
+.dois {
+  grid-area: f;
+}
+
+.tres {
+  grid-area: g;
+}
+
+.quatro {
+  grid-area: h;
+}
+
+.cinco {
+  grid-area: i;
+}
+
+.seis {
+  grid-area: j;
+}
+
+.sete {
+  grid-area: k;
+}
+
+.oito {
+  grid-area: l;
+}
+
+.nove {
+  grid-area: m;
+}
+
+.divisao {
+  grid-area: v;
+}
+
+.multi {
+  grid-area: w;
+}
+
+.mais {
+  grid-area: y;
+}
+
+.menos {
+  grid-area: x;
+}
+
+.igual {
+  grid-area: z;
+}
+
+.virgula {
+  grid-area: o;
+}
